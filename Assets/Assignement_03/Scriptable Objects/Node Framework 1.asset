@@ -1,0 +1,224 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d69ed4a0850fc544f8b6ffb3d9d3bd5c, type: 3}
+  m_Name: Node Framework 1
+  m_EditorClassIdentifier: 
+  guid: ebc51c43-d8d6-4302-8a27-1d229ab579ff
+  optionalJsonPath: path
+  nodeFrameworkWrapper:
+    Nodes: []
+    NodePortConnections: []
+  Nodes:
+  - rid: 7152575096766070832
+  - rid: 7152575096766070834
+  - rid: 7152575096766070838
+  NodePortConnections:
+  - rid: 7152575096766070837
+  - rid: 7152575096766070842
+  windowGroupRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 7152575096766070832
+      type: {class: NodeStarter, ns: , asm: Assembly-CSharp}
+      data:
+        NodeInputPorts: []
+        NodeOutputPorts:
+        - rid: 7152575096766070833
+        originalRect:
+          serializedVersion: 2
+          x: 49909.9
+          y: 49949.1
+          width: 179.2
+          height: 100.8
+        usedRect:
+          serializedVersion: 2
+          x: 49249.9
+          y: 49768.1
+          width: 179.2
+          height: 100.8
+        title: 
+        StartLabelRect:
+          serializedVersion: 2
+          x: 49249.9
+          y: 49748.1
+          width: 179.2
+          height: 20
+    - rid: 7152575096766070833
+      type: {class: NodeOutputPort, ns: , asm: Assembly-CSharp}
+      data:
+        PORT_COLOR: {r: 0, g: 0, b: 0, a: 1}
+        SMALLER_RECT_COLOR: {r: 1, g: 1, b: 1, a: 1}
+        usedRect:
+          serializedVersion: 2
+          x: 49407.098
+          y: 49812.5
+          width: 12
+          height: 12
+        smallerUsedRect:
+          serializedVersion: 2
+          x: 49411.098
+          y: 49816.5
+          width: 4
+          height: 4
+    - rid: 7152575096766070834
+      type: {class: NodeSingle, ns: , asm: Assembly-CSharp}
+      data:
+        NodeInputPorts:
+        - rid: 7152575096766070835
+        NodeOutputPorts:
+        - rid: 7152575096766070836
+        originalRect:
+          serializedVersion: 2
+          x: 49925.4
+          y: 49812.6
+          width: 179.2
+          height: 100.8
+        usedRect:
+          serializedVersion: 2
+          x: 49489.4
+          y: 49775.1
+          width: 179.2
+          height: 115.8
+        title: Single
+        Text: Hello!
+    - rid: 7152575096766070835
+      type: {class: NodeInputPort, ns: , asm: Assembly-CSharp}
+      data:
+        PORT_COLOR: {r: 0, g: 0, b: 0, a: 1}
+        SMALLER_RECT_COLOR: {r: 1, g: 1, b: 1, a: 1}
+        usedRect:
+          serializedVersion: 2
+          x: 49506.4
+          y: 49827
+          width: 12
+          height: 12
+        smallerUsedRect:
+          serializedVersion: 2
+          x: 49510.4
+          y: 49831
+          width: 4
+          height: 4
+    - rid: 7152575096766070836
+      type: {class: NodeOutputPort, ns: , asm: Assembly-CSharp}
+      data:
+        PORT_COLOR: {r: 0, g: 0, b: 0, a: 1}
+        SMALLER_RECT_COLOR: {r: 1, g: 1, b: 1, a: 1}
+        usedRect:
+          serializedVersion: 2
+          x: 49646.598
+          y: 49827
+          width: 12
+          height: 12
+        smallerUsedRect:
+          serializedVersion: 2
+          x: 49650.598
+          y: 49831
+          width: 4
+          height: 4
+    - rid: 7152575096766070837
+      type: {class: NodePortConnection, ns: , asm: Assembly-CSharp}
+      data:
+        START_OFFSET: {x: 0, y: -1}
+        END_OFFSET: {x: 0, y: -1}
+        connectedPorts:
+          Port1:
+            rid: 7152575096766070833
+          Port2:
+            rid: 7152575096766070835
+    - rid: 7152575096766070838
+      type: {class: NodeBinary, ns: , asm: Assembly-CSharp}
+      data:
+        NodeInputPorts:
+        - rid: 7152575096766070839
+        NodeOutputPorts:
+        - rid: 7152575096766070840
+        - rid: 7152575096766070841
+        originalRect:
+          serializedVersion: 2
+          x: 50020.4
+          y: 49899.6
+          width: 179.2
+          height: 100.8
+        usedRect:
+          serializedVersion: 2
+          x: 49758.4
+          y: 49794.6
+          width: 179.2
+          height: 100.8
+        title: Binary
+    - rid: 7152575096766070839
+      type: {class: NodeInputPort, ns: , asm: Assembly-CSharp}
+      data:
+        PORT_COLOR: {r: 0, g: 0, b: 0, a: 1}
+        SMALLER_RECT_COLOR: {r: 1, g: 1, b: 1, a: 1}
+        usedRect:
+          serializedVersion: 2
+          x: 49775.4
+          y: 49839
+          width: 12
+          height: 12
+        smallerUsedRect:
+          serializedVersion: 2
+          x: 49779.4
+          y: 49843
+          width: 4
+          height: 4
+    - rid: 7152575096766070840
+      type: {class: NodeOutputPort, ns: , asm: Assembly-CSharp}
+      data:
+        PORT_COLOR: {r: 0, g: 0, b: 0, a: 1}
+        SMALLER_RECT_COLOR: {r: 1, g: 1, b: 1, a: 1}
+        usedRect:
+          serializedVersion: 2
+          x: 49915.598
+          y: 49822.203
+          width: 12
+          height: 12
+        smallerUsedRect:
+          serializedVersion: 2
+          x: 49919.598
+          y: 49826.203
+          width: 4
+          height: 4
+    - rid: 7152575096766070841
+      type: {class: NodeOutputPort, ns: , asm: Assembly-CSharp}
+      data:
+        PORT_COLOR: {r: 0, g: 0, b: 0, a: 1}
+        SMALLER_RECT_COLOR: {r: 1, g: 1, b: 1, a: 1}
+        usedRect:
+          serializedVersion: 2
+          x: 49915.598
+          y: 49855.8
+          width: 12
+          height: 12
+        smallerUsedRect:
+          serializedVersion: 2
+          x: 49919.598
+          y: 49859.8
+          width: 4
+          height: 4
+    - rid: 7152575096766070842
+      type: {class: NodePortConnection, ns: , asm: Assembly-CSharp}
+      data:
+        START_OFFSET: {x: 0, y: -1}
+        END_OFFSET: {x: 0, y: -1}
+        connectedPorts:
+          Port1:
+            rid: 7152575096766070836
+          Port2:
+            rid: 7152575096766070839
